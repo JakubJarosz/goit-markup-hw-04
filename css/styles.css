@@ -508,13 +508,19 @@ color: #FFFFFF;
   color: var(--main-color);
 }
 
-.contact-list-item:hover svg ,.contact-list-item:hover a{
+.contact-list-item-link:hover {
   color: var(--main-color);
+}
+
+.contact-list-item-link:hover svg {
   fill: var(--main-color);
 }
 
-.contact-list-item:focus svg ,.contact-list-item:focus a{
+.contact-list-item-link:focus {
   color: var(--main-color);
+}
+
+.contact-list-item-link:focus svg {
   fill: var(--main-color);
 }
 
@@ -528,11 +534,13 @@ color: #FFFFFF;
 .team-list-item .social-media-list:hover svg, .team-list-item .social-media-list:hover  {
   fill:  white;
   background-color: var(--main-color);
+  cursor: pointer;
 }
 
 .team-list-item .social-media-list:focus svg, .team-list-item .social-media-list:focus  {
   fill:  var(--main-color);
   background-color: #212121;
+  cursor: pointer;
 }
 
 .team-list-item {
@@ -543,7 +551,7 @@ color: #FFFFFF;
 .footer .social-media-list:hover,
 .footer .social-media-list:focus  {
   background-color: var(--main-color);
-
+  cursor: pointer;
 }
 
 .clients-list-item:hover svg, .clients-list-item:hover {
@@ -555,6 +563,13 @@ color: #FFFFFF;
   border-color: var(--main-color);
   fill: var(--main-color)
 }
+
+.clients-list-item {
+  cursor: pointer;
+  color: var(--secondary-color);
+  fill: var(--secondary-color);
+}
+
 /*    END HOVER FOCUS    */
 
 /*    ICONS    */
@@ -563,12 +578,14 @@ color: #FFFFFF;
   height: 12px;
   width: 16px;
   margin-right: 10px;
+  fill: var(--secondary-color);
 }
 
 .nav-list-icon2 {
   height: 16px;
   width: 10px;
   margin-right: 10px;
+  fill: var(--secondary-color);
 }
 
 .info-list-icon {
@@ -610,6 +627,7 @@ color: #FFFFFF;
 .portfoliopictures-list-item:hover,
 .portfoliopictures-list-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .portfoliobutton-list-item:hover,
